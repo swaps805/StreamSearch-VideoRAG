@@ -2,8 +2,8 @@ import { useEffect, useRef } from 'react'
 
 const promptChips = [
   'Summarize the video in one paragraph.',
-  'What happens around the middle of the video?',
-  'Point out any on-screen text or visible objects.',
+  'What is being explained at 1:30? ',
+  'Explain this concept in Detail',
 ]
 
 export function ChatPanel({ messages, question, setQuestion, isSending, elapsedSec, onSubmit, onCancel, onQuickPrompt, onReset }) {

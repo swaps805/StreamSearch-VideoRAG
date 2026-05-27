@@ -13,7 +13,7 @@ from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage
 from langchain_core.tools import tool
 
-from config import GOOGLE_API_KEY, GROQ_API_KEY
+from config import  GROQ_API_KEY
 from indexing import build_indexes, faiss_search
 from orchestrator import make_orchestrator_system
 from utils import normalize_message_content
@@ -25,7 +25,6 @@ class VideoRAGEngine:
         self.transcript = transcript
         self.results = results
 
-        os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
         os.environ["GROQ_API_KEY"] = GROQ_API_KEY
         # genai.configure(api_key=GOOGLE_API_KEY)
 
