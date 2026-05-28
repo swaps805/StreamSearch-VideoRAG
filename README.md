@@ -5,7 +5,7 @@ StreamSearch is an Agentic Retrieval-Augmented Generation (RAG) system built to 
 ## Setup
 
 - Requires GPU support (16 GB VRAM recommended).
-- Install ReAct and Python 3.11.
+- Install React and Python 3.11.
 - Create a virtual environment and install dependencies:
 
 ```bash
