@@ -30,7 +30,7 @@ export function ProgressSection({ fileName, message, uploadProgress, audioProgre
       <div className="font-['Space_Grotesk'] text-[1.25rem] font-bold">
         {isProcessing ? fileName || 'Processing video' : 'Drop a video file here'}
       </div>
-      <div className="text-[0.95rem] text-slate-400">{isProcessing ? message : 'or click to browse — MP4, MOV, WebM'}</div>
+      <div className="text-[0.95rem] text-slate-400">{isProcessing ? message : 'or click to browse — MP4'}</div>
 
       <div className="mt-4 grid w-full gap-3">
         <ProgressBar label="Video upload" value={uploadProgress} accentClass="bg-gradient-to-r from-violet-300 to-fuchsia-500" />
